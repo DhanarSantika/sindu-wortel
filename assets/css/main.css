@@ -1,0 +1,88 @@
+.bg-gray-200{
+    background-color: #E9ECED !important;
+}
+
+.input-group.input-group-outline.is-focused .form-label+.form-control,
+.input-group.input-group-outline.is-filled .form-label+.form-control {
+  border-color: #07ACEB !important;
+  border-top-color: transparent !important;
+  box-shadow: inset 1px 0 #07ACEB, inset -1px 0 #07ACEB, inset 0 -1px #07ACEB;
+}
+
+.input-group.input-group-outline.is-focused .form-label,
+.input-group.input-group-outline.is-filled .form-label {
+  width: 100%;
+  height: 100%;
+  font-size: 0.6875rem !important;
+  color: #07ACEB;
+  display: flex;
+  line-height: 1.25 !important;
+}
+
+.input-group.input-group-outline.is-focused .form-label:before,
+.input-group.input-group-outline.is-focused .form-label:after,
+.input-group.input-group-outline.is-filled .form-label:before,
+.input-group.input-group-outline.is-filled .form-label:after {
+  opacity: 1;
+}
+
+.input-group.input-group-outline.is-focused .form-label:before,
+.input-group.input-group-outline.is-focused .form-label:after,
+.input-group.input-group-outline.is-filled .form-label:before,
+.input-group.input-group-outline.is-filled .form-label:after {
+  border-top-color: #07ACEB;
+  box-shadow: inset 0 1px #07ACEB;
+}
+
+.bg-gradient-primary{
+  background-image: linear-gradient(195deg, #07ACEB 0%, #0CAAE9 100%);
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #07ACEB;
+  border-color: #07ACEB;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #0CAAE9;
+  border-color: #0CAAE9;
+}
+
+.btn-check:focus+.btn-primary,
+.btn-primary:focus {
+  color: #fff;
+  background-color: #0CAAE9;
+  border-color: #0CAAE9;
+  box-shadow: 0 0 0 0.2rem rgba(0, 213, 255, 0.5);
+}
+
+.btn-check:checked+.btn-primary,
+.btn-check:active+.btn-primary,
+.btn-primary:active,
+.btn-primary.active,
+.show>.btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #0CAAE9;
+  border-color: #0CAAE9;
+}
+
+.btn-check:checked+.btn-primary:focus,
+.btn-check:active+.btn-primary:focus,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 213, 255, 0.5);
+}
+
+.btn-primary:disabled,
+.btn-primary.disabled {
+  color: #fff;
+  background-color: #07ACEB;
+  border-color: #07ACEB;
+}
+
+.shadow-primary {
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(7, 172, 235, 0.5) !important;
+}
