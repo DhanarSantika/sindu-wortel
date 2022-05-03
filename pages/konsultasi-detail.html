@@ -1,0 +1,402 @@
+<!--
+=========================================================
+* Material Dashboard 2 - v=3.0.2
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/material-dashboard
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://www.creative-tim.com/license)
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <title>
+        Sistem Informasi Posyandu Wortel
+    </title>
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+    <!-- Nucleo Icons -->
+    <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <!-- CSS Files -->
+    <link id="pagestyle" href="../assets/css/material-dashboard.css?v=3.0.2" rel="stylesheet" />
+    <link id="pagestyle" href="../assets/css/main.css" rel="stylesheet" />
+    <link id="pagestyle" href="../assets/css/sindu-fns.css" rel="stylesheet" />
+</head>
+
+<body class="g-sidenav-show  bg-gray-200">
+    <aside
+        class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3   bg-gradient-dark"
+        id="sidenav-main">
+        <div class="sidenav-header">
+            <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
+                aria-hidden="true" id="iconSidenav"></i>
+            <a class="navbar-brand m-0" href=" https://demos.creative-tim.com/material-dashboard/pages/dashboard "
+                target="_blank">
+                <img src="../assets/img/logos/posyandu.svg" class="navbar-brand-img h-100" alt="main_logo">
+                <span class="ms-1 font-weight-bold text-white">SINDU Wortel</span>
+            </a>
+        </div>
+        <hr class="horizontal light mt-0 mb-2">
+        <div class="collapse navbar-collapse  w-auto  max-height-vh-100" id="sidenav-collapse-main">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="../index.html">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10">dashboard</i>
+                        </div>
+                        <span class="nav-link-text ms-1">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10">edit_note</i>
+                        </div>
+                        <span class="nav-link-text ms-1">Layanan Kesehatan Balita</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="layanan-kesehatan-ibu.html">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10">edit_note</i>
+                        </div>
+                        <span class="nav-link-text ms-1">Layanan Kesehatan Ibu</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="layanan-kesehatan-lansia.html">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10">edit_note</i>
+                        </div>
+                        <span class="nav-link-text ms-1">Layanan Kesehatan Lansia</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10">account_circle</i>
+                        </div>
+                        <span class="nav-link-text ms-1">Kelola Kader</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10">mood</i>
+                        </div>
+                        <span class="nav-link-text ms-1">Kelola Peserta</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10">analytics</i>
+                        </div>
+                        <span class="nav-link-text ms-1">Laporan</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10">receipt_long</i>
+                        </div>
+                        <span class="nav-link-text ms-1">Kelola Postingan</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white active bg-gradient-primary" href="konsultasi-online.html">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10">chat</i>
+                        </div>
+                        <span class="nav-link-text ms-1">Konsultasi (Forum)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10">description</i>
+                        </div>
+                        <span class="nav-link-text ms-1">Rekam Medis</span>
+                    </a>
+                </li>
+                <li class="nav-item mt-3">
+                    <h6 class="ps-4 ms-2 text-uppercase text-xs text-white font-weight-bolder opacity-8">Akun Saya</h6>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white " href="#">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10">person</i>
+                        </div>
+                        <span class="nav-link-text ms-1">Profil</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white " href="#">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10">logout</i>
+                        </div>
+                        <span class="nav-link-text ms-1">Keluar</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
+        <!-- Navbar -->
+        <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur"
+            navbar-scroll="true">
+            <div class="container-fluid py-1 px-3">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
+                        <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a>
+                        </li>
+                        <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Konsultasi (Forum)</li>
+                    </ol>
+                </nav>
+                <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+                    <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+                        <div class="input-group input-group-outline">
+                            <label class="form-label">Type here...</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <ul class="navbar-nav  justify-content-end">
+                        <li class="nav-item d-flex align-items-center">
+                            <a href="javascript:;" class="nav-link text-body font-weight-bold px-0">
+                                <i class="fa fa-user me-sm-1"></i>
+                                <span class="d-sm-inline d-none">Kader 1</span>
+                            </a>
+                        </li>
+                        <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
+                            <a href="javascript:;" class="nav-link text-body p-0" id="iconNavbarSidenav">
+                                <div class="sidenav-toggler-inner">
+                                    <i class="sidenav-toggler-line"></i>
+                                    <i class="sidenav-toggler-line"></i>
+                                    <i class="sidenav-toggler-line"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item px-3 d-flex align-items-center">
+                            <a href="javascript:;" class="nav-link text-body p-0">
+                                <i class="fa fa-cog fixed-plugin-button-nav cursor-pointer"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown pe-2 d-flex align-items-center">
+                            <a href="javascript:;" class="nav-link text-body p-0" id="dropdownMenuButton"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa fa-bell cursor-pointer"></i>
+                            </a>
+                            <ul class="dropdown-menu  dropdown-menu-end  px-2 py-3 me-sm-n4"
+                                aria-labelledby="dropdownMenuButton">
+                                <li class="mb-2">
+                                    <a class="dropdown-item border-radius-md" href="javascript:;">
+                                        <div class="d-flex py-1">
+                                            <div class="my-auto">
+                                                <img src="../assets/img/logo-ct-dark.png"
+                                                    class="avatar avatar-sm  me-3 ">
+                                            </div>
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="text-sm font-weight-normal mb-1">
+                                                    <span class="font-weight-bold">New message</span> from Kader 2
+                                                </h6>
+                                                <p class="text-xs text-secondary mb-0">
+                                                    <i class="fa fa-clock me-1"></i>
+                                                    1 year ago
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+        <div class="container-fluid py-4">
+            <div style="min-height: 80vh;">
+                <!-- Content Here -->
+
+                <!-- start detail forum -->
+                <div class="my-3 p-3 bg-body rounded shadow-sm" style="height: 620px; overflow: scroll;">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Apakah Vitamin X Masih Ada Di Posyandu?</h5>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col order-last">
+                            <span class="let-this-null"></span>
+                        </div>
+                        <div class="col order-first">
+                            <div class="card component-fns_card">
+                                <div class="card-body">
+                                    <div class="user-profile">
+                                        <img src="../assets/img/team-1.jpg" width="90" height="90" class="" alt="...">
+                                    </div>
+                                    <div class="user-info">
+                                        <h5 class="card-user_name">Ibu Maemunah</h5>
+                                        <p class="card-user_occupation">03/05/2022 20:22</p>
+                                        <p class="card-text"> Halo ibu kader saya mau konsultasi nich.. mohon bantuannya
+                                            untukk... anak saya.... dan ayah saya... vitaminya di... apakah masih...
+                                            mohon untuk segera direspon ya ibu kader..
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col order-last">
+                            <div class="card component-fns_card">
+                                <div class="card-body">
+                                    <div class="user-profile">
+                                        <img src="../assets/img/team-5.jpg" width="90" height="90" class="" alt="...">
+                                    </div>
+                                    <div class="user-info">
+                                        <h5 class="card-user_name">Diriku Sendiri</h5>
+                                        <p class="card-user_occupation">03/05/2022 21:22</p>
+                                        <p class="card-text"> Sabar dulu ya bu.. saya lagi malas.. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col order-first">
+                            <span class="let-this-null"></span>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col order-last">
+                            <span class="let-this-null"></span>
+                        </div>
+                        <div class="col order-first">
+                            <div class="card component-fns_card">
+                                <div class="card-body">
+                                    <div class="user-profile">
+                                        <img src="../assets/img/team-1.jpg" width="90" height="90" class="" alt="...">
+                                    </div>
+                                    <div class="user-info">
+                                        <h5 class="card-user_name">Ibu Maemunah</h5>
+                                        <p class="card-user_occupation">03/05/2022 22:22</p>
+                                        <p class="card-text"> Lah buset dah.. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col order-last">
+                            <span class="let-this-null"></span>
+                        </div>
+                        <div class="col order-first">
+                            <div class="card component-fns_card">
+                                <div class="card-body">
+                                    <div class="user-profile">
+                                        <img src="../assets/img/team-1.jpg" width="90" height="90" class="" alt="...">
+                                    </div>
+                                    <div class="user-info">
+                                        <h5 class="card-user_name">Ibu Maemunah</h5>
+                                        <p class="card-user_occupation">03/05/2022 22:22</p>
+                                        <p class="card-text"> Lah buset dah.. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col order-last">
+                            <span class="let-this-null"></span>
+                        </div>
+                        <div class="col order-first">
+                            <div class="card component-fns_card">
+                                <div class="card-body">
+                                    <div class="user-profile">
+                                        <img src="../assets/img/team-1.jpg" width="90" height="90" class="" alt="...">
+                                    </div>
+                                    <div class="user-info">
+                                        <h5 class="card-user_name">Ibu Maemunah</h5>
+                                        <p class="card-user_occupation">03/05/2022 22:22</p>
+                                        <p class="card-text"> Lah buset dah.. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end detail forum -->
+                <!-- start input comment -->
+                <div class="my-3 p-3 bg-body rounded shadow-sm">
+                    <form action="">
+                        <div class="input-group input-group-outline my-3">
+                            <label for="xxxx" class="form-label">Tulis Komentar</label>
+                            <textarea class="form-control" id="xxx" rows="3"></textarea>
+                            <span>&emsp;</span>
+                            <button type="button" class="btn btn-primary">Kirim</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- end input comment -->
+                <!-- End Content -->
+            </div>
+            <footer class="footer py-4  ">
+                <div class="container-fluid">
+                    <div class="row align-items-center justify-content-lg-between">
+                        <div class="col-lg-6 mb-lg-0 mb-4">
+                            <div class="copyright text-center text-sm text-muted text-lg-start">
+                                ©
+                                <script>
+                                    document.write(new Date().getFullYear())
+                                </script>,
+                                made with <i class="fa fa-heart"></i> by AKPSI 4FC for a better posyandu.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </main>
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/chartjs.min.js"></script>
+
+    <script>
+        var win = navigator.platform.indexOf('Win') > -1;
+        if (win && document.querySelector('#sidenav-scrollbar')) {
+            var options = {
+                damping: '0.5'
+            }
+            Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+        }
+    </script>
+    <!-- Github buttons -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+    <script src="../assets/js/material-dashboard.min.js?v=3.0.2"></script>
+</body>
+
+</html>

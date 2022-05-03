@@ -1,0 +1,142 @@
+/* FNS : Init */
+.fns-br {
+    display: block;
+}
+
+.a-fns {
+    display: inline-block;
+    font-weight: 700;
+    line-height: 1.667;
+    color: #7b809a;
+    text-align: left;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-color: transparent;
+    padding: 0.625rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.15s ease-in;
+}
+
+.a-fns-custom {
+    color: #f0f2f5;
+    border-color: #f0f2f5;
+}
+
+.a-fns-custom:hover {
+    color: #000;
+    background-color: #f0f2f5;
+    border-color: #f0f2f5;
+}
+
+.btn-check:focus+.a-fns-custom,
+.a-fns-custom:focus {
+    box-shadow: 0 0 0 0.2rem rgba(240, 242, 245, 0.5);
+}
+
+.btn-check:checked+.a-fns-custom,
+.btn-check:active+.a-fns-custom,
+.a-fns-custom:active,
+.a-fns-custom.active,
+.a-fns-custom.dropdown-toggle.show {
+    color: #000;
+    background-color: #f0f2f5;
+    border-color: #f0f2f5;
+}
+
+.btn-check:checked+.a-fns-custom:focus,
+.btn-check:active+.a-fns-custom:focus,
+.a-fns-custom:active:focus,
+.a-fns-custom.active:focus,
+.a-fns-custom.dropdown-toggle.show:focus {
+    box-shadow: 0 0 0 0.2rem rgba(240, 242, 245, 0.5);
+}
+
+.a-fns-custom:disabled,
+.a-fns-custom.disabled {
+    color: #f0f2f5;
+    background-color: transparent;
+}
+
+
+/* fns-card */
+.component-fns_card {
+    width: auto;
+    border: none;
+    border: 1px solid #e0e6ed;
+    border-radius: 8px;
+    -webkit-box-shadow: 4px 6px 10px -3px #bfc9d4;
+    box-shadow: 4px 6px 10px -3px #bfc9d4;
+}
+
+.component-fns_card .card-body {
+    padding: 0;
+    display: flex;
+}
+
+.component-fns_card .user-profile {
+    align-self: center;
+    padding: 0 25px;
+}
+
+.component-fns_card img {
+    border-radius: 50%;
+}
+
+.component-fns_card .user-info {
+    padding: 24px 8px 24px 0px;
+}
+
+.component-fns_card .card-user_name {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.component-fns_card .card-user_occupation {
+    color: #888ea8;
+    font-size: 13px;
+}
+
+.component-fns_card .card-star_rating span {
+    display: inline-block;
+    padding: 0px 8px;
+    font-size: 15px;
+    border-radius: 50px;
+    margin-bottom: 22px;
+}
+
+.component-fns_card .card-star_rating svg {
+    width: 16px;
+    vertical-align: bottom;
+}
+
+.component-fns_card .card-text {
+    color: #515365;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    line-height: 23px;
+}
+
+/* Natasha : apply style oth media/device */
+@media (max-width: 575px) {
+    .component-fns_card {
+        width: auto;
+        text-align: center;
+    }
+
+    .component-fns_card .card-body {
+        padding: 0;
+        display: block;
+    }
+
+    .component-fns_card .user-info {
+        padding: 0 25px 25px 25px;
+    }
+
+    .component-fns_card .user-profile {
+        align-self: center;
+        padding: 25px 25px;
+    }
+}
