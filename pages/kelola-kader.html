@@ -66,7 +66,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white active bg-gradient-primary" href="#">
+          <a class="nav-link text-white" href="layanan-kesehatan-ibu.html">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">edit_note</i>
             </div>
@@ -82,7 +82,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="kelola-kader.html">
+          <a class="nav-link text-white active bg-gradient-primary" href="#">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">account_circle</i>
             </div>
@@ -114,7 +114,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#">
+          <a class="nav-link text-white" href="konsultasi-online.html">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">chat</i>
             </div>
@@ -158,7 +158,7 @@
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
             <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a></li>
-            <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Layanan Kesehatan</li>
+            <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Kelola Kader</li>
           </ol>
         </nav>
         <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
@@ -241,21 +241,25 @@
             </div>
           </div>
         </div>
+        <div class="row">
+          <div class="col col-md-12 justify-content-end text-end">
+            <button style="margin-top:16px" class="btn btn-primary" onclick="location.href='kelola/tambah-kader.html'">Tambah Kader</button>
+          </div>
+        </div>
       </div>
       <div class="card" style="margin-top:2vh">
         <div class="card-header p-0 position-relative mt-n0 mx-0 z-index-2">
           <div class="bg-gradient-primary border-radius-xs pt-3 pb-2">
-            <h6 class="text-white text-capitalize ps-3">Daftar Peserta</h6>
+            <h6 class="text-white text-capitalize ps-3">Daftar Kader</h6>
           </div>
         </div>
         <div class="table-responsive">
           <table class="table align-items-center mb-0">
             <thead>
               <tr>
-                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">NIK</th>
-                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Nama Peserta</th>
-                <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Tanggal Lahir</th>
-                <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Jenis Kelamin</th>
+                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Kader</th>
+                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Username</th>
+                <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Tanggal Akun Dibuat</th>
                 <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Actions</th>
               </tr>
             </thead>
@@ -264,21 +268,18 @@
                 <td>
                   <div class="d-flex px-2 py-1">
                     <div class="d-flex flex-column justify-content-center">
-                      <p class="text-xs font-weight-normal mb-0">1234567890123456</p>
+                      <p class="text-xs font-weight-normal mb-0">Friendly Nur Sakti</p>
                     </div>
                   </div>
                 </td>
                 <td>
-                  <p class="text-xs font-weight-normal mb-0">Yor Forger</p>
+                  <p class="text-xs font-weight-normal mb-0">friendlybersahabat</p>
                 </td>
                 <td class="align-middle text-center text-sm">
-                  <p class="text-xs font-weight-normal mb-0">06/04/1963</p>
+                  <p class="text-xs font-weight-normal mb-0">06/05/2022</p>
                 </td>
                 <td class="align-middle text-center">
-                  <p class="text-xs font-weight-normal mb-0">Perempuan</p>
-                </td>
-                <td class="align-middle text-center">
-                  <button class="btn btn-primary" type="button" onclick="location.href='layanan-kesehatan/form-layanan-kesehatan-ibu.html'">Tambah Rekam</button>
+                  <button class="btn btn-danger" type="button" data-bs-toggle="modal" data-bs-target="#modal-default">Hapus</button>
                 </td>
               </tr>
             </tbody>
@@ -286,6 +287,39 @@
         </div>
       </div>
       <!-- End Content -->
+      <!-- Modal Here -->
+      <div class="modal fade" id="modal-default" tabindex="-1" role="dialog" aria-labelledby="modal-default" aria-hidden="true">
+        <div class="modal-dialog modal- modal-dialog-centered modal-" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h6 class="modal-title font-weight-normal" id="modal-title-default">Yakin Hapus Kader?</h6>
+            </div>
+            <div class="modal-body">
+              <p>Tindakan ini tidak dapat dibatalkan setelah dilakukan.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn bg-gradient-danger" data-bs-toggle="modal" data-bs-target="#modal-confirmation">Hapus</button>
+              <button type="button" class="btn btn-link  ml-auto" data-bs-dismiss="modal">Batal</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modal-confirmation" tabindex="-1" role="dialog" aria-labelledby="modal-confirmation" aria-hidden="true">
+        <div class="modal-dialog modal- modal-dialog-centered modal-" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h6 class="modal-title font-weight-normal" id="modal-title-default">Kader Berhasil Dihapus</h6>
+            </div>
+            <div class="modal-body">
+              <p>Klik tutup untuk kembali.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary  ml-auto" data-bs-dismiss="modal">Tutup</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal -->
       </div>     
       <footer class="footer py-4  ">
         <div class="container-fluid">
