@@ -8,7 +8,6 @@
 * Licensed under MIT (https://www.creative-tim.com/license)
 * Coded by Creative Tim
 
-
 =========================================================
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
@@ -51,7 +50,7 @@
     <div class="collapse navbar-collapse  w-auto  max-height-vh-100" id="sidenav-collapse-main">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link text-white" href=".../index.html">
+          <a class="nav-link text-white" href="../index.html">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">dashboard</i>
             </div>
@@ -99,7 +98,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="laporan-posyandu.html">
+          <a class="nav-link text-white" href="#">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">analytics</i>
             </div>
@@ -107,7 +106,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white active bg-gradient-primary" href="#">
+          <a class="nav-link text-white" href="kelola-postingan.html">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">receipt_long</i>
             </div>
@@ -123,7 +122,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="rekam-medis.html">
+          <a class="nav-link text-white active bg-gradient-primary" href="#">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">description</i>
             </div>
@@ -159,7 +158,7 @@
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
             <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a></li>
-            <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Kelola Postingan</li>
+            <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Rekam Medis</li>
           </ol>
         </nav>
         <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
@@ -173,114 +172,35 @@
       </div>
     </nav>
     <!-- End Navbar -->
-    <!-- Content Here -->
-    <div class="container-fluid py-4">
+    <div class="container-fluid py-4"> 
+      <div style="min-height: 80vh;">
+      <!-- Content Here -->
       <div class="container-fluid">
-          <div class="row">
-              <div class="col-md-8 col-sm-6">
-                <div class="row">
-                    <div class="col-md-2 my-1">
-                        <button class="btn bg-gradient-primary dropdown-toggle m-0" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                            Filter
-                          </button>
-                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <li><a class="dropdown-item" href="#">Judul</a></li>
-                            <li><a class="dropdown-item" href="#">Penerbit</a></li>
-                          </ul>
-                    </div>
-                    <div class="col-md-8 my-1">
-                      <div class="input-group input-group-outline mt-0">
-                        <label class="form-label">Cari</label>
-                        <input type="text" class="form-control">
-                      </div>
-                    </div>
-                    <div class="col-md-2 my-1">
-                      <button class="btn btn-primary">Cari</button>
-                    </div>
-                  </div>
+        <div class="row">
+          <h4>Masukkan NIK Peserta</h4>
+        </div>
+        <div class="row">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10">
+                <div class="input-group input-group-outline">
+                  <label class="form-label">NIK</label>
+                  <input type="text" class="form-control">
+                </div>
               </div>
-              <div class="col-md-4 col-sm-6 justify-content-end text-end my-1">
-                <button class="btn btn-primary" onclick="location.href='kelola/buat-post.html'">Buat Post</button>
+              <div class="col-md-2">
+                <button class="btn btn-primary">Cari</button>
               </div>
+            </div>
           </div>
-          <div class="row my-3">
-            <div class="col-md-12 col-sm-6">
-                <div class="card-header">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-6 col-sm-6 mt-3 p-0">
-                                <h4>Existing Article #2</h4>
-                                <p>Diterbitkan pada 08/05/2022</p>
-                            </div>
-                            <div class="col-md-6 col-sm-6 mt-3 p-0 justify-content-end text-end">
-                                <button class="btn btn-primary" onclick="location.href='kelola/buat-post.html'">Edit</button>
-                                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-default">Hapus</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-body pt-0" style="background-color:white">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum lacus sed imperdiet dignissim. Donec aliquet est et lacus tempus, non luctus massa mollis. Suspendisse aliquet leo et cursus venenatis. Integer tincidunt in lorem et rutrum. Mauris sed mollis magna. Ut laoreet sagittis arcu quis blandit. Suspendisse ut mauris et augue porta luctus. Cras id nisl dui. Nunc vulputate ligula sed nibh sollicitudin molestie. Curabitur leo mauris, condimentum vel odio in, ultrices aliquet diam. Curabitur fermentum orci in lobortis malesuada. Nunc accumsan felis et felis bibendum posuere.</p>
-                </div>
-            </div>
         </div>
-        <div class="row my-3">
-            <div class="col-md-12 col-sm-6">
-                <div class="card-header">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-6 col-sm-6 mt-3 p-0">
-                                <h4>Existing Article #1</h4>
-                                <p>Diterbitkan pada 07/05/2022</p>
-                            </div>
-                            <div class="col-md-6 col-sm-6 mt-3 p-0 justify-content-end text-end">
-                                <button class="btn btn-primary" onclick="location.href='kelola/buat-post.html'">Edit</button>
-                                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-default">Hapus</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-body pt-0" style="background-color:white">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum lacus sed imperdiet dignissim. Donec aliquet est et lacus tempus, non luctus massa mollis. Suspendisse aliquet leo et cursus venenatis. Integer tincidunt in lorem et rutrum. Mauris sed mollis magna. Ut laoreet sagittis arcu quis blandit. Suspendisse ut mauris et augue porta luctus. Cras id nisl dui. Nunc vulputate ligula sed nibh sollicitudin molestie. Curabitur leo mauris, condimentum vel odio in, ultrices aliquet diam. Curabitur fermentum orci in lobortis malesuada. Nunc accumsan felis et felis bibendum posuere.</p>
-                </div>
-            </div>
-        </div>
+        
       </div>
       <!-- End Content -->
       <!-- Modal Here -->
-      <div class="modal fade" id="modal-default" tabindex="-1" role="dialog" aria-labelledby="modal-default" aria-hidden="true">
-        <div class="modal-dialog modal- modal-dialog-centered modal-" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h6 class="modal-title font-weight-normal" id="modal-title-default">Yakin Hapus Post?</h6>
-            </div>
-            <div class="modal-body">
-              <p>Tindakan ini tidak dapat dibatalkan setelah dilakukan.</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn bg-gradient-danger" data-bs-toggle="modal" data-bs-target="#modal-confirmation">Hapus</button>
-              <button type="button" class="btn btn-link  ml-auto" data-bs-dismiss="modal">Batal</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="modal-confirmation" tabindex="-1" role="dialog" aria-labelledby="modal-confirmation" aria-hidden="true">
-        <div class="modal-dialog modal- modal-dialog-centered modal-" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h6 class="modal-title font-weight-normal" id="modal-title-default">Post Berhasil Dihapus</h6>
-            </div>
-            <div class="modal-body">
-              <p>Klik tutup untuk kembali.</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary  ml-auto" data-bs-dismiss="modal">Tutup</button>
-            </div>
-          </div>
-        </div>
-      </div>
+      
       <!-- End Modal -->
-      <div style="min-height: 5vh;"></div>     
+      </div>     
       <footer class="footer py-4  ">
         <div class="container-fluid">
           <div class="row align-items-center justify-content-lg-between">
